@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/*Scroll Bar*/
+.wrapper::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.wrapper::-webkit-scrollbar-track {
+    background: #0b0e11;
+}
+ 
+.wrapper::-webkit-scrollbar-thumb {
+  background-color: #8f2c2c;
+  border-radius: 10px;
+}
 /*Navgiation Bar*/
 /*LogoColor*/
 .logo {
