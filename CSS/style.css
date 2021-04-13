@@ -9,6 +9,8 @@
     --primary-clr: #0b0e11;
     --primary2-clr: #151a21;
     --primaryFont-clr: #fff;
+    --accent-clr: #fd4d4d;
+    --accent100-clr: #fd6868;
 }
 
 .light-mode{
@@ -35,13 +37,13 @@
 }
  
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: #8f2c2c;
+  background-color: var(--accent-clr);
   border-radius: 10px;
 }
 /*Navgiation Bar*/
 /*LogoColor*/
 .logo {
-    color: #8f2c2c;
+    color: var(--accent-clr);
     cursor: default;
     font-family: 'Lobster', sans-serif;
 }
@@ -52,11 +54,14 @@
 }
 /*BurgerColor*/
 .burger div{    
-    background-color: #8f2c2c;
+    background-color: var(--accent-clr);
     width: 30px;
     height: 2px;
     margin: 5px 0px;
     transition: .5s ease;
+}
+.line2{
+    width: 25px !important;
 }
 
 .wrapper {
@@ -98,7 +103,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #8f2c2c;
+    color: var(--accent-clr);
 }
 /*Head Section*/
 .head-wrapper {
@@ -119,7 +124,7 @@ nav {
 }
 
 .head-title span {
-    color: #8f2c2c;
+    color: var(--accent-clr);
 }
 
 .head-paragraph{
@@ -130,8 +135,8 @@ nav {
 
 .head-button {
     color: white;
-    background-color: #8f2c2c;
-    border: 2px solid #8f2c2c;
+    background-color: var(--accent-clr);
+    border: 2px solid var(--accent-clr);
     padding: 15px 45px;
     border-radius: 50px;
     transition: all .3s ease;
@@ -141,8 +146,8 @@ nav {
 }
 
 .head-button:hover {
-    background-color: #8f2c2cda;
-    border-color: #8f2c2cda;
+    background-color: var(--accent100-clr);
+    border-color: var(--accent100-clr);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
     transform: translateY(-5px);
 }
@@ -154,7 +159,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #8f2c2c;
+    border-top: 2px solid var(--accent-clr);
 }
 
 .skills-title {
@@ -165,7 +170,7 @@ nav {
 }
 
 .skills-set i{
-    color: #8f2c2c;
+    color: var(--accent-clr);
     font-size: 30pt;
     margin: 0px 10px;
 }
@@ -177,8 +182,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid #8f2c2c;
-    border-bottom: 2px solid #8f2c2c;
+    border-top: 2px solid var(--accent-clr);
+    border-bottom: 2px solid var(--accent-clr);
 }
 .projects-row{
     width: 100%;
@@ -210,7 +215,7 @@ nav {
     transition:  0.3s ease;
 }
 .projects-div:hover {
-    border-color: #8f2c2c;
+    border-color: var(--accent-clr);
     transform: translateY(-10px);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
 }
@@ -218,7 +223,7 @@ nav {
     width: 400px;
 }
 .projects-text h2{
-    color: #8f2c2c;
+    color: var(--accent-clr);
     margin: 25px 0 20px 0;
     font-family: 'Open Sans', sans-serif;
 }
@@ -237,12 +242,12 @@ nav {
 }
 
 .projects-text span{
-    color: #8f2c2c;
+    color: var(--accent-clr);
 }
 
 .projects-btn{
-    background-color: #8f2c2c;
-    border: 2px solid #8f2c2c;
+    background-color: var(--accent-clr);
+    border: 2px solid var(--accent-clr);
     border-radius: 50px;
     text-align: center;
     color: white;
@@ -257,8 +262,8 @@ nav {
 }
 
 .projects-btn:hover {
-    background-color: #8f2c2cda;
-    border-color: #8f2c2cda;
+    background-color: var(--accent100-clr);
+    border-color: var(--accent100-clr);
 }
 /*Foot Section*/
 .foot-wrapper{
@@ -275,13 +280,13 @@ nav {
 }
 
 .foot-wrapper i{
-    color: #8f2c2c;
+    color: var(--accent-clr);
     margin: 0 10px;
     font-size: 30pt;
     transition: 0.3s ease;
 }
 .foot-wrapper i:hover{
-    color: #8f2c2cda;
+    color: var(--accent100-clr);
     text-shadow: 0px 8px 5px rgba(0, 0, 0, 0.7);
     transform: translateY(-5px);
 }
@@ -290,7 +295,7 @@ nav {
     position: absolute;
     right: 50px;
     bottom: 50px;
-    background-color: #8f2c2c;
+    background-color: var(--accent-clr);
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -300,8 +305,8 @@ nav {
 }
 
 .btt:hover {
-    background-color: #8f2c2cda;
-    border-color: #8f2c2cda;
+    background-color: var(--accent100-clr);
+    border-color: var(--accent100-clr);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
     transform: translateY(-5px);
 }
