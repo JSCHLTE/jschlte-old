@@ -5,13 +5,33 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-clr: #0b0e11;
+    --primary2-clr: #151a21;
+    --primaryFont-clr: #fff;
+}
+
+.light-mode{
+    --primary-clr: #fff;
+    --primary2-clr: #F5F5F5;  
+    --primaryFont-clr: #000;
+}
+
+
+.theme{
+    position: absolute;
+    right: 5%;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
 /*Scroll Bar*/
 .wrapper::-webkit-scrollbar {
     width: 5px;
 }
  
 .wrapper::-webkit-scrollbar-track {
-    background: #0b0e11;
+    background: var(--primary-clr);
 }
  
 .wrapper::-webkit-scrollbar-thumb {
@@ -48,8 +68,8 @@
 }
 /*NavColor*/
 nav {
-    background-color: #151a21;
-    color: white;
+    background-color: var(--primary2-clr);
+    color: var(--primaryFont-clr);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,7 +91,7 @@ nav {
 }
 
 .nav-links a{
-    color: white;
+    color: var(--primaryFont-clr);
     text-decoration: none;
     transition: .3s ease;
     font-family: 'Varela Round', sans-serif;
@@ -84,11 +104,11 @@ nav {
 .head-wrapper {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: flex;transition: 0.3s;
     flex-direction: column;
     align-items: center;
-    background-color: #0b0e11;
-    color: white;
+    background-color: var(--primary-clr);
+    color: var(--primaryFont-clr);
     text-align: center;
 }
 
@@ -104,7 +124,7 @@ nav {
 
 .head-paragraph{
     font-size: 20pt;
-    margin: 3rem 45rem 3rem 45rem;
+    margin: 3rem 20rem 3rem;
     font-family: 'Hind Siliguri', sans-serif;
 }
 
@@ -128,7 +148,7 @@ nav {
 }
 /*Skills Section*/
 .skills-wrapper{
-    background-color: #151a21;
+    background-color: var(--primary2-clr);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -138,7 +158,7 @@ nav {
 }
 
 .skills-title {
-    color: white;
+    color: var(--primaryFont-clr);
     font-size: 15pt;
     margin-bottom: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -151,7 +171,7 @@ nav {
 }
 /*Projects Section*/
 .projects-wrapper{
-    background-color: #0b0e11;
+    background-color: var(--primary-clr);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -170,7 +190,7 @@ nav {
 
 
 .projects-title {
-    color: white;
+    color: var(--primaryFont-clr);
     font-size: 30pt;
     font-family: 'Open Sans', sans-serif;
     margin: 0 0 4rem 0;
@@ -178,8 +198,8 @@ nav {
 .projects-div {
     height: 400px;
     width: 400px;
-    background-color: #151a21;
-    border: 2px solid #0b0e11;
+    background-color: var(--primary2-clr);
+    border: 2px solid var(--primary-clr);
     border-radius: 9px;
     display: flex;
     flex-direction: column;
@@ -187,9 +207,12 @@ nav {
     margin: 50px 50px;
     cursor: default;
     text-align: center;
+    transition:  0.3s ease;
 }
 .projects-div:hover {
     border-color: #8f2c2c;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
 }
 .projects-img img {
     width: 400px;
@@ -200,7 +223,7 @@ nav {
     font-family: 'Open Sans', sans-serif;
 }
 .projects-text {
-    color: white;
+    color: var(--primaryFont-clr);
     text-align: center;
     margin: 0 10px 25px;
     height: 150px;
@@ -239,13 +262,13 @@ nav {
 }
 /*Foot Section*/
 .foot-wrapper{
-    background-color: #151a21;
+    background-color: var(--primary2-clr);
     text-align: center;
     padding: 2rem;
     position: relative;
 }
 .foot-wrapper h1{
-    color: white;
+    color: var(--primaryFont-clr);
     font-size: 30pt;
     margin: 0 0 25px;
     font-family: 'Lobster', sans-serif;
@@ -306,7 +329,7 @@ nav {
     /*Navbar Mobile*/
     .nav-links {
         position: absolute;
-        background-color: #151a21;
+        background-color: var(--primary2-clr);
         display: flex;
         top: 7.7vh;
         right: 0;
