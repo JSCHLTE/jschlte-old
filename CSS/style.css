@@ -98,7 +98,7 @@ nav {
 .nav-links a{
     color: var(--primaryFont-clr);
     text-decoration: none;
-    transition: .3s ease;
+    transition: 0.2s ease;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -336,17 +336,30 @@ nav {
         position: absolute;
         background-color: var(--primary2-clr);
         display: flex;
-        top: 7.7vh;
+        top: 100%;
         right: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transform: translateX(100%);
-        transition: transform .5s;
+        transition: transform .3s;
     }
 
     .nav-active {
-        transform: translateX(0px);
+        transform: translateX(0);
+        animation: bounce 0.5s;
+    }
+
+    @keyframes bounce{
+        0%{
+            transform: translateX(100%);
+        }
+        50%{
+            transform: translateX(-25%);
+        }
+        100%{
+            transform: translateX(0);
+        }
     }
 
     .nav-links li {
