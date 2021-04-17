@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" href="Images/logo.jpg" id="icon">
+    <!--SCRIPTS-->
+    <script src="https://kit.fontawesome.com/eded3175eb.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="CSS/contact.css">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>Jordan</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="https://twitter.com/JordanDevelops" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/JordanDevelops" target="_blank">Github</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="theme">
+            <i class="fas fa-sun" id="theme-mode"></i>
+        </div>
+    </nav>
+
+    <div class="wrapper-title">
+        <h1>Contact Me</h1>
+        <p>Report a bug or reach out to me.</p>
+    </div>
+    <div class="wrapper-form">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="Your name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Your e-mail" required><br>
+            <textarea name="message" class="form-control" rows="4" placeholder="Write your message"></textarea><br>
+            <input type="submit" class="form-control submit" value="SEND">
+        </form>
+    </div>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html> 
