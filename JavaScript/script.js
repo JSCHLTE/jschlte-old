@@ -4,6 +4,16 @@ let navLinks = document.querySelector(".nav-links");
 let theme = document.querySelector("#theme-mode");
 let lightMode = localStorage.getItem("lightMode");
 let icon = document.querySelector("#icon");
+let toTop = document.querySelector(".btt");
+
+
+window.addEventListener("scroll", () =>{
+    if(window.scrollY > 200){
+        toTop.classList.add("btt-active")
+    } else {
+        toTop.classList.remove("btt-active")
+    }
+});
 
 nav = () => {
     burger.addEventListener("click", () => {
