@@ -85,8 +85,8 @@ nav {
 }
 .nav-links li{
 	list-style-type: none;
-	display: inline;
-	margin: 0 25px;
+	display: inline-block;
+	margin: 0px 25px;
 }
 .nav-links {
 	cursor: default;
@@ -97,9 +97,26 @@ nav {
 	transition: 0.2s ease;
 	font-family: 'Varela Round', sans-serif;
 }
-.nav-links a:hover {
-	color: var(--accent-clr);
+.nav-links a::after {
+    content: "";
+	display: block;
+    width: 0;
+    background-color: var(--primaryFont-clr);
+    height: 0.175rem;
+	transition: 0.2s width;
+	margin-left: auto;
 }
+
+.nav-links a:hover::after {
+	width: 100%;
+    transition: 0.2s width;
+	margin: 0 0;
+}
+
+.nav-links a:hover {
+	color: #fd4d4d;
+}
+
 /*Head Section*/
 #noscript-warning{
 	position: fixed;
