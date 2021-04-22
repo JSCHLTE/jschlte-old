@@ -12,8 +12,8 @@ html{
 	--primary-clr: #0b0e11;
 	--primary2-clr: #151a21;
 	--primaryFont-clr: #fff;
-	--accent-clr: #fd4d4d;
-	--accent100-clr: #fd6868;
+	--accent-clr:  hsl(0, 100%, 65%);
+	--accent100-clr: hsl(0, 50%, 65%);
 }
 .light-mode{
 	--primary-clr: #fff;
@@ -36,7 +36,7 @@ html{
 }
 /*Scroll Bar*/
 html::-webkit-scrollbar {
-	width: 5px;
+	width: 7px;
 }
 html::-webkit-scrollbar-track {
 	background: var(--primary-clr);
@@ -44,6 +44,9 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
 	background-color: var(--accent-clr);
 	border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:hover{
+	background-color: var(--accent100-clr);
 }
 /*Navgiation Bar*/
 /*LogoColor*/
@@ -94,7 +97,7 @@ nav {
 .nav-links a{
 	color: var(--primaryFont-clr);
 	text-decoration: none;
-	transition: 0.2s ease;
+	transition: 0.3s ease;
 	font-family: 'Varela Round', sans-serif;
 }
 .nav-links a::after {
@@ -102,19 +105,19 @@ nav {
 	display: block;
     width: 0;
     background-color: var(--primaryFont-clr);
-    height: 0.175rem;
-	transition: 0.2s width;
+    height: 2px;
+	transition: 0.3s width;
 	margin-left: auto;
 }
 
 .nav-links a:hover::after {
 	width: 100%;
-    transition: 0.2s width;
+    transition: 0.3s width;
 	margin: 0 0;
 }
 
 .nav-links a:hover {
-	color: #fd4d4d;
+	color: var(--accent-clr);
 }
 
 /*Head Section*/
@@ -195,12 +198,13 @@ nav {
 .skills-set i{
 	color: var(--accent-clr);
 	font-size: 30pt;
-	padding: 0px 10px;
+	padding: 10px;
 	transition: 0.2s all;
 }
 
 .skills-set i:hover{
 	transform: translateY(-5px);
+	color: var(--accent100-clr);
 }
 /*Projects Section*/
 .projects-wrapper{
@@ -238,6 +242,7 @@ nav {
 	cursor: default;
 	text-align: center;
 	transition: 0.3s ease;
+	align-items: center;
 }
 .projects-div:hover {
 	border-color: var(--accent-clr);
@@ -254,8 +259,7 @@ nav {
 }
 .projects-text {
 	color: var(--primaryFont-clr);
-	text-align: center;
-	margin: 0 10px 30px;
+	margin: 10% 10px 35px;
 	height: 150px;
 	font-family: 'Hind Siliguri', sans-serif;
 }
@@ -265,6 +269,10 @@ nav {
 }
 .projects-text span{
 	color: var(--accent-clr);
+}
+
+.projects-text-section{
+	height: 80px;
 }
 .projects-btn{
 	background-color: var(--accent-clr);
@@ -284,6 +292,11 @@ nav {
 .projects-btn:hover {
 	background-color: var(--accent100-clr);
 	border-color: var(--accent100-clr);
+}
+
+.btn-view {
+	height: 100%;
+	text-decoration: none;
 }
 /*Foot Section*/
 .foot-wrapper{
