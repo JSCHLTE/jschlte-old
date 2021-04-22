@@ -256,6 +256,7 @@ nav {
 	color: var(--accent-clr);
 	margin: 25px 0 20px 0;
 	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
 }
 .projects-text {
 	color: var(--primaryFont-clr);
