@@ -55,6 +55,9 @@ html::-webkit-scrollbar-thumb:hover{
 	cursor: default;
 	font-family: 'Lobster', sans-serif;
 }
+.logo:hover{
+	color: var(--primaryFont-clr);
+}
 .burger {
 	display: none;
 	cursor: pointer;
