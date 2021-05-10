@@ -11,13 +11,15 @@ html{
 :root{
 	--primary-clr: #0b0e11;
 	--primary2-clr: #151a21;
+	--primary-blur: rgba(21, 26, 33, 0.8);
 	--primaryFont-clr: #fff;
 	--accent-clr:  hsl(0, 100%, 65%);
 	--accent100-clr: hsl(0, 50%, 65%);
 }
 .light-mode{
 	--primary-clr: #fff;
-	--primary2-clr: #F5F5F5;
+	--primary2-clr: #f5f5f5;
+	--primary-blur: rgba(245, 245, 245, 0.8);
 	--primaryFont-clr: #000;
 }
 .theme{
@@ -78,7 +80,9 @@ html::-webkit-scrollbar-thumb:hover{
 }
 /*NavColor*/
 nav {
-	background-color: var(--primary2-clr);
+	background: var(--primary-blur);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 	color: var(--primaryFont-clr);
 	display: flex;
 	justify-content: space-around;
@@ -374,7 +378,7 @@ nav {
 	/*Navbar Mobile*/
 	.nav-links {
 		position: absolute;
-		background-color: var(--primary2-clr);
+		background: var(--primary2-clr);
 		display: flex;
 		top: 100%;
 		right: 0;
