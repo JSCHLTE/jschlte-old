@@ -119,13 +119,13 @@ nav {
     width: 0;
     background-color: var(--primaryFont-clr);
     height: 2px;
-	transition: 0.3s width;
+	transition: 0.2s width;
 	margin-left: auto;
 }
 
 .nav-links a:hover::after {
 	width: 100%;
-    transition: 0.3s width;
+    transition: 0.2s width;
 	margin: 0 0;
 }
 
@@ -162,7 +162,7 @@ nav {
 	text-align: center;
 }
 .head-title{
-	margin: 0 1rem;
+	margin: 0 2.5rem;
 	font-size: min(max(2rem, 4vw), 3rem);
 	font-family: 'Open Sans', sans-serif;
 }
