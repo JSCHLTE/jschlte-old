@@ -2,6 +2,9 @@
 let theme = document.querySelector("#theme-mode");
 let lightMode = localStorage.getItem("lightMode");
 let icon = document.querySelector("#icon");
+const notificationLight = document.querySelector(".notification-light");
+const notificationDark = document.querySelector(".notification-dark");
+const notiText = document.querySelector("noti-text");
 
 theme.addEventListener("click", () => {
     lightMode = localStorage.getItem("lightMode");
@@ -11,11 +14,15 @@ theme.addEventListener("click", () => {
         icon.href = "Images/logo-white.jpg";
         localStorage.setItem("lightMode", "enabled");
         theme.classList.toggle("rotateForward");
+        notificationDark.classList.remove("notiCall");
+        notificationLight.classList.add("notiCall");
     } else {
         theme.className = "fas fa-sun";
         icon.href = "Images/logo.jpg";
         localStorage.setItem("lightMode", null);
         theme.classList.toggle("rotateBackward");
+        notificationLight.classList.remove("notiCall");
+        notificationDark.classList.add("notiCall");
     }
 });
 
