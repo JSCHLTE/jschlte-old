@@ -8,6 +8,9 @@
 html{
 	scroll-behavior: smooth;
 }
+body{
+	user-select: none;
+}
 :root{
 	--primary-clr: #0b0e11;
 	--primary2-clr: #151a21;
@@ -22,31 +25,14 @@ html{
 	--primary-blur: rgba(245, 245, 245, 0.8);
 	--primaryFont-clr: #000;
 }
-.notification-light{
+.notification-dark, .notification-light{
 	-webkit-backdrop-filter: saturate(180%) blur(10px);
     backdrop-filter: saturate(180%) blur(10px);
 	color: var(--primaryFont-clr);
 	position: fixed;
-	top: 85vh;
+	top: 80vh;
 	left: 10px;
 	background-color: var(--primary-blur);
-	padding: 20px;
-	border-radius: 5px;
-	font-family: 'Varela Round', sans-serif;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-	user-select: none;
-	cursor: default;
-	z-index: 1;
-	transform: translateX(-110%);
-}
-.notification-dark{
-	-webkit-backdrop-filter: saturate(180%) blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
-	color: var(--primaryFont-clr);
-	position: fixed;
-	top: 85vh;
-	left: 10px;
-	background: var(--primary-blur);
 	padding: 20px;
 	border-radius: 5px;
 	font-family: 'Varela Round', sans-serif;
@@ -246,12 +232,14 @@ nav {
 	font-family: 'Varela Round', sans-serif;
 	text-transform: uppercase;
 }
-.head-button:hover {
-	background-color: var(--accent100-clr);
-	border-color: var(--accent100-clr);
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
-	transform: translateY(-5px);
-}
+@media (hover: hover) {
+	.head-button:hover {
+		background-color: var(--accent100-clr);
+		border-color: var(--accent100-clr);
+		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
+		transform: translateY(-5px);
+	}
+  }
 /*Skills Section*/
 .skills-wrapper{
 	background-color: var(--primary2-clr);
@@ -403,7 +391,7 @@ nav {
 }
 .btt{
 	position: fixed;
-	right: 1%;
+	right: 5%;
 	bottom: 5%;
 	background-color: var(--accent-clr);
 	width: 50px;
@@ -414,25 +402,25 @@ nav {
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
-	transform: translateX(100px);
+	transform: translateX(500%);
 	transition: transform 1s ease;
 }
 
 .btt-active{
-	transform: translateX(0px);
+	transform: translateX(0%);
 }
 
 .fa-angle-up{
 	color: white !important;
 	font-size: 25pt;
 }
-.btt:hover {
-	background-color: var(--accent100-clr);
-	border-color: var(--accent100-clr);
-	box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.7);
-	transform: translateY(-5px);
-	transition: 0.2s ease;
-}
+@media (hover: hover) {
+	.btt:hover {
+		background-color: var(--accent100-clr);
+		border-color: var(--accent100-clr);
+		transition: 0.2s ease;
+	}
+  }
 /*Mobile Support*/
 @media screen and (max-width: 812px){
 	/*Navbar Mobile*/
