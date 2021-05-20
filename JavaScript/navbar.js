@@ -10,12 +10,13 @@ nav = () => {
         navLinks.classList.toggle("nav-active");
         burger.classList.toggle("toggle");
         body.classList.toggle("fixed-position");
+        navbar.classList.remove("active");
     });
 }
 nav();
 
 window.addEventListener("scroll", () =>{
-    if(pageYOffset > 200){
+    if(pageYOffset > 100){
         navbar.classList.add("active");
     } else{
         navbar.classList.remove("active");
