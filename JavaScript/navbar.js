@@ -3,7 +3,7 @@ let navLinks = document.querySelector(".nav-links");
 const sections = document.querySelectorAll("section");
 const navbar = document.querySelector("nav");
 const body = document.querySelector("body");
-const navItems = document.querySelectorAll(".nav-items");
+const navItems = document.querySelectorAll(".nav-item");
 
 nav = () => {
     burger.addEventListener("click", () => {
