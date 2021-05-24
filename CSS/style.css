@@ -332,7 +332,7 @@ nav {
 	transition: 0.2s;
 }
 .skill-wrap:hover{
-	transform: translateY(-10px);
+	transform: scale(1.1);
 	box-shadow: 0px 0px 0px 2px var(--accent-clr);
 }
 .skill-icon i{
