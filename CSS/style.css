@@ -35,7 +35,7 @@ body{
     backdrop-filter: saturate(180%) blur(10px);
 	color: var(--primaryFont-clr);
 	position: fixed;
-	top: -10%;
+	top: -100%;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: var(--primary-blur);
@@ -412,7 +412,7 @@ nav {
 }
 .projects-tag div{
 	padding: 2px 10px;
-	border-radius: 50px;
+	border-radius: 5px;
 	margin: 0 5px;
 }
 .newTag{
