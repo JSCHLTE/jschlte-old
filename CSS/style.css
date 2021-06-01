@@ -421,6 +421,9 @@ nav {
 .appTag{
 	background: #FF69B4;
 }
+.gameTag{
+	background: green;
+}
 .webTag{
 	background: #4169e1;
 }
