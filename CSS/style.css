@@ -11,6 +11,9 @@ html{
 body{
 	user-select: none;
 }
+.body-active{
+	
+}
 :root{
 	--primary-clr: #0b0e11;
 	--primary2-clr: #151a21;
@@ -516,7 +519,7 @@ nav {
 	color: var(--accent-clr);
 	margin: 2rem 0.5rem;
 	font-size: 30pt;
-	transition: 0.3s ease;
+	transition: 0.2s ease;
 }
 .foot-wrapper i:hover{
 	color: var(--accent100-clr);
@@ -652,6 +655,17 @@ nav {
 		100%{
 			opacity: 0;
 			transform: translate(0);
+		}
+	}
+	@keyframes fadeIn{
+		0%{
+			opacity: 0;
+		}
+		50%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
 		}
 	}
 	.nav-links li {

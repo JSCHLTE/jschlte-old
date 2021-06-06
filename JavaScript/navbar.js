@@ -5,6 +5,10 @@ const navbar = document.querySelector("nav");
 const body = document.querySelector("body");
 const navItems = document.querySelectorAll(".nav-item");
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.style.animation = 'fadeIn 10s';
+});
+
 nav = () => {
     burger.addEventListener("click", () => {
         navLinks.classList.toggle("nav-active");
