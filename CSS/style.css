@@ -264,7 +264,7 @@ nav {
 
 .head-wrapper {
 	width: 100vw;
-	height: 100vh;
+	height: max(700px, 100vh);
 	display: flex;
 	transition: 0.3s;
 	flex-direction: column;
@@ -587,12 +587,12 @@ nav {
 		top: 100%;
 		right: 0;
 		width: 100%;
-		height: 100vh;
+		height: 82vh;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		transform: translateX(100%);
 		animation: bounceBack 0.5s;
-		justify-content: center;
 	}
 	.dropdown-content{
 		display: none !important;

@@ -6,6 +6,10 @@ const notificationLight = document.querySelector(".notification-light");
 const notificationDark = document.querySelector(".notification-dark");
 const notiText = document.querySelector("noti-text");
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    document.body.style.animation = 'fadeIn 0.5s';
+});
+
 theme.addEventListener("click", () => {
     lightMode = localStorage.getItem("lightMode");
     document.body.classList.toggle("light-mode");
