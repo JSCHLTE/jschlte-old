@@ -20,7 +20,6 @@ theme.addEventListener("click", () => {
         theme.classList.toggle("rotateForward");
         notificationDark.classList.remove("notiCall");
         notificationLight.classList.add("notiCall");
-        document.documentElement.style.setProperty('--scroll-bar', '#e4e4e4');
     } else {
         theme.className = "fas fa-sun";
         icon.href = "Images/logo.jpg";
@@ -28,7 +27,6 @@ theme.addEventListener("click", () => {
         theme.classList.toggle("rotateBackward");
         notificationLight.classList.remove("notiCall");
         notificationDark.classList.add("notiCall");
-        document.documentElement.style.setProperty('--scroll-bar', '#151a21');
     }
 });
 
