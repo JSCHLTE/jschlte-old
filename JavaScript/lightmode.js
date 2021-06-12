@@ -1,5 +1,6 @@
 //Jordan Schulte
-let theme = document.querySelector("#theme-mode");
+let theme = document.querySelector(".theme");
+let themeLogo = document.querySelector("#theme-mode");
 let lightMode = localStorage.getItem("lightMode");
 let icon = document.querySelector("#icon");
 const notificationLight = document.querySelector(".notification-light");
@@ -14,17 +15,17 @@ theme.addEventListener("click", () => {
     lightMode = localStorage.getItem("lightMode");
     document.body.classList.toggle("light-mode");
     if (document.body.classList.contains("light-mode")) {
-        theme.className = "fas fa-moon";
+        themeLogo.className = "fas fa-moon";
         icon.href = "Images/logo-white.jpg";
         localStorage.setItem("lightMode", "enabled");
-        theme.classList.toggle("rotateForward");
+        themeLogo.classList.toggle("rotateForward");
         notificationDark.classList.remove("notiCall");
         notificationLight.classList.add("notiCall");
     } else {
-        theme.className = "fas fa-sun";
+        themeLogo.className = "fas fa-sun";
         icon.href = "Images/logo.jpg";
         localStorage.setItem("lightMode", null);
-        theme.classList.toggle("rotateBackward");
+        themeLogo.classList.toggle("rotateBackward");
         notificationLight.classList.remove("notiCall");
         notificationDark.classList.add("notiCall");
     }
@@ -33,5 +34,5 @@ theme.addEventListener("click", () => {
 if (lightMode === "enabled") {
     document.body.classList.toggle("light-mode");
     icon.href = "Images/logo-white.jpg";
-    theme.className = "fas fa-moon";
+    themeLogo.className = "fas fa-moon";
 }

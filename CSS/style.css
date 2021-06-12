@@ -11,9 +11,6 @@ html{
 body{
 	user-select: none;
 }
-.body-active{
-	
-}
 :root{
 	--primary-clr: #0b0e11;
 	--primary2-clr: #151a21;
@@ -38,7 +35,7 @@ body{
     backdrop-filter: saturate(180%) blur(10px);
 	color: var(--primaryFont-clr);
 	position: fixed;
-	top: -100%;
+	top: -200px;
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: var(--primary-blur);
@@ -57,31 +54,31 @@ body{
 }
 @keyframes noti{
 	0%{
-		top: -10%;
+		top: -100px;
 	}
 	10%{
-		top: 10%;
+		top: 100px;
 	}
 	20%{
-		top: 10%;
+		top: 100px;
 	}
 	30%{
-		top: 10%;
+		top: 100px;
 	}
 	40%{
-		top: 10%;
+		top: 100px;
 	}
 	50%{
-		top: 10%;
+		top: 100px;
 	}
 	60%{
-		top: 10%;
+		top: 100px;
 	}
 	70%{
-		top: -10%;
+		top: -100px;
 	}
 	100%{
-		top: -10%;
+		top: -100px;
 	}
 }
 .p-color{
@@ -95,6 +92,9 @@ body{
 	right: 5%;
 	font-size: 20pt;
 	cursor: pointer;
+}
+.theme-mode{
+	pointer-events: none;
 }
 @media (hover: hover){
 	.theme:hover{
@@ -132,6 +132,7 @@ html::-webkit-scrollbar-thumb:hover{
 	color: var(--accent-clr);
 	cursor: default;
 	font-family: 'Lobster', sans-serif;
+	z-index: 1;
 }
 .logo:hover{
 	color: var(--primaryFont-clr);
@@ -571,11 +572,15 @@ nav {
 	margin: 2rem 0;
 	height: fit-content;
 }
+.media-a a{
+	transition: 0.2s;
+}
 .media-a:hover a{
 	opacity: 0.5;
 }
 .media-a a:hover{
 	opacity: 1 !important;
+	transition: 0.2s;
 }
 /*Mobile Support*/
 @media screen and (max-width: 812px){
@@ -584,10 +589,10 @@ nav {
 		position: absolute;
 		background: var(--primary2-clr);
 		display: flex;
-		top: 100%;
+		top: 0%;
 		right: 0;
 		width: 100%;
-		height: 82vh;
+		height: 100vh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
