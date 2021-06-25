@@ -93,6 +93,30 @@ body{
 	font-size: 20pt;
 	cursor: pointer;
 }
+.theme::before{
+	--scale: 0;
+
+	content: attr(data-tooltip);
+	position: absolute;
+	text-transform: none;
+	font-size: 12pt;
+	left: 50%;
+	transform: translateX(-50%) translateY(100%) scale(var(--scale));
+	background: #333;
+	color: white;
+	border-radius: 0.3rem;
+	width: max-content;
+	padding: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: top center;
+	margin-top: 1.2rem;
+}
+@media (hover: hover){
+	.theme:hover::before{
+		--scale: 1;
+	}
+}
 .theme-mode{
 	pointer-events: none;
 }
@@ -564,6 +588,28 @@ nav {
 	transform: scale(0.9);
 	transition: 0.1s;
 }
+.btt::before{
+	--scale: 0;
+
+	content: attr(data-tooltip);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+	background: #333;
+	color: white;
+	border-radius: 0.3rem;
+	width: max-content;
+	padding: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: bottom center;
+	margin-bottom: 1.2rem;
+}
+@media (hover: hover){
+	.btt:hover::before{
+		--scale: 1;
+	}
+}
 .fa-angle-up{
 	color: white !important;
 	font-size: 25pt;
@@ -574,6 +620,7 @@ nav {
 }
 .media-a a{
 	transition: 0.2s;
+	position: relative;
 }
 .media-a:hover a{
 	opacity: 0.5;
@@ -581,6 +628,28 @@ nav {
 .media-a a:hover{
 	opacity: 1 !important;
 	transition: 0.2s;
+}
+.media-a a::before{
+	--scale: 0;
+
+	content: attr(data-tooltip);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+	background: #333;
+	color: white;
+	border-radius: 0.3rem;
+	width: max-content;
+	padding: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+	transition: transform 0.2s ease-in-out;
+	transform-origin: bottom center;
+	margin-bottom: .25rem;
+}
+@media (hover: hover){
+	.media-a a:hover::before{
+		--scale: 1;
+	}
 }
 /*Mobile Support*/
 @media screen and (max-width: 812px){
