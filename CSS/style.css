@@ -220,11 +220,15 @@ nav {
 	text-align: center;
 	transition: 0.1s !important;
 }
-.dropdown-content a:hover {color: var(--accent-clr);}
+.dropdown-content a:hover {color: var(--accent-clr);} 
 
 .navContent:hover .dropdown-content {display: block;}
 
 .navContent:hover .dropbtn {color: var(--accent-clr) !important;}
+
+.navContent:hover .fa-chevron-down{transform: rotate(0);}
+
+.fa-chevron-down{transform: rotate(180deg); transition: transform 0.1s linear;}
 
 .social-media-links{
 	position: absolute;
@@ -500,30 +504,6 @@ nav {
 .projects-text-section{
 	height: 80px;
 }
-.projects-btn{
-	background-color: var(--accent-clr);
-	border: 2px solid var(--accent-clr);
-	border-radius: 50px;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	transition: all .3s ease;
-	text-decoration: none;
-	font-family: 'Varela Round', sans-serif;
-	text-transform: uppercase;
-	padding: 10px 20px;
-	text-align: center;
-	margin: 0 auto;
-}
-.projects-btn:hover {
-	background-color: var(--accent100-clr);
-	border-color: var(--accent100-clr);
-}
-
-.btn-view {
-	height: 100%;
-	text-decoration: none;
-}
 /*Foot Section*/
 .foot-wrapper{
 	background-color: var(--primary2-clr);
@@ -667,6 +647,9 @@ nav {
 		justify-content: center;
 		transform: translateX(100%);
 		animation: bounceBack 0.5s;
+	}
+	.fa-chevron-down{
+		display: none;
 	}
 	.dropdown-content{
 		display: none !important;
