@@ -12,12 +12,12 @@ body{
 	user-select: none;
 }
 :root{
-	--primary-clr: #0b0e11;
-	--primary2-clr: #151a21;
+	--primary-clr: #0f0f0f;
+	--primary2-clr: #1b1b1b;
 	--primary-blur: rgba(21, 26, 33, 0.8);
 	--primaryFont-clr: #fff;
-	--accent-clr:  hsl(0, 98%, 65%);
-	--accent100-clr: hsl(0, 50%, 65%);
+	--accent-clr:  hsl(200, 100%, 40%);
+	--accent100-clr: hsl(200, 50%, 40%);
 	--scroll-bar: #151a21;
 	transition: 0.2s;
 }
@@ -201,7 +201,7 @@ nav {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	background: var(--primary2-clr);
+	background: var(--primary-blur);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1000;
 	border: 1px solid var(--accent-clr);
@@ -220,11 +220,11 @@ nav {
 	text-align: center;
 	transition: 0.1s !important;
 }
-.dropdown-content a:hover {color: var(--accent-clr);} 
+.dropdown-content a:hover {color: var(--accent-clr); transform: scale(1.1);} 
 
 .navContent:hover .dropdown-content {display: block;}
 
-.navContent:hover .dropbtn {color: var(--accent-clr) !important;}
+.navContent:hover .dropbtn {color: var(--accent-clr) !important; transform: scale(1.1);}
 
 .navContent:hover .fa-chevron-down{transform: rotate(0);}
 
@@ -258,24 +258,9 @@ nav {
 	transition: 0.3s ease;
 	font-family: 'Varela Round', sans-serif;
 }
-.nav-links a::after {
-    content: "";
-	display: block;
-    width: 0;
-    background-color: var(--primaryFont-clr);
-    height: 2px;
-	transition: 0.2s width;
-	margin-left: auto;
-}
-
-.nav-item:hover::after {
-	width: 100%;
-    transition: 0.2s width;
-	margin: 0 0;
-}
-
 .nav-item:hover {
 	color: var(--accent-clr);
+	transform: scale(1.1);
 }
 /*Head Section*/
 #noscript-warning{
@@ -328,10 +313,11 @@ nav {
 	text-decoration: none;
 	font-family: 'Varela Round', sans-serif;
 	text-transform: uppercase;
+	transition: 0.2s ease;
 }
 @media (hover: hover) {
 	.head-button:hover {
-		text-decoration: underline;
+		transform: scale(1.05);
 	}
   }
 /*Skills Section*/
