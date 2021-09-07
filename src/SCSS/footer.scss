@@ -1,0 +1,48 @@
+@import 'variables';
+
+footer {
+    background: $black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    user-select: none;
+    align-items: center;
+    height: 4rem;
+    border-top: 1px solid $white;
+}
+
+.footer-links{
+    &:hover{
+        a{
+            opacity: 0.5;
+        }
+    }
+}
+
+.footer-links a {
+    color: $white;
+    font-size: 20pt;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+.footer-links i{
+    transition: 0.3s;
+    padding: 0 0.5rem;
+    &:hover{
+        transform: translateY(-3px);
+        color: $white;
+    }
+}
+
+.footer-ver {
+    color: $white;
+    font-family: $tinos;
+    letter-spacing: 1px;
+    font-size: 10pt;
+    opacity: 0.5;
+    @media(max-width: 59rem){
+        font-size: 12pt;
+    }
+}

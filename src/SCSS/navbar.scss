@@ -1,0 +1,130 @@
+@import 'variables';
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem 0;
+    user-select: none;
+    position: relative;
+    z-index: 10;
+    @media(max-width: 59rem){
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.burger {
+    display: none;
+    @media(max-width: 59rem){
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+        width: 3.125rem;
+        height: 3.125rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-title {
+    h1{
+        font-weight: bolder;
+        font-size: 50pt;
+        font-family: $bebas;
+        @media(max-width: 59rem){
+            font-size: 35pt;
+        }
+    }
+}
+
+.main-links{
+    margin: 1rem 0;
+    display: flex;
+    @media(max-width: 59rem) {
+        position: absolute;
+        border: 2px solid $white;
+        background: $black;
+        top: 100%;
+        flex-direction: column;
+        left: 0;
+        height: 75vh;
+        justify-content: center;
+        text-align: left;
+        z-index: 7;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+        opacity: 0;
+        .main-link {
+            margin: 1rem 2rem 1rem 1rem;
+        }
+    }
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.selected{
+    font-weight: bolder;
+    position: relative;
+    pointer-events: none;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $white;
+    }
+}
+
+.main-link {
+    padding: 0.2rem;
+    margin: 0 1rem;
+    color: $white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-family: $tinos;
+    position: relative;
+    &:hover{
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        opacity: 1;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 1px;
+        background: $white;
+        transition: 0.1s;
+        @media(max-width: 59rem){
+            width: 0;
+            opacity: 1;
+        }
+    }
+    &:hover::after{
+        opacity: 1;
+        @media(max-width: 59rem){
+            width: 100%;
+        }
+    }
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    display: none;
+}
+
+.overlayOn{
+    display: block;
+}

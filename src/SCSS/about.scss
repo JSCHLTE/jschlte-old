@@ -1,0 +1,35 @@
+@import 'globals';
+@import 'variables';
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.user-info {
+    font-family: $tinos;
+    text-align: center;
+    max-width: 40rem;
+    min-width: 2rem;
+    margin: 0 2rem;
+    h1 {
+        font-size: clamp(30pt, 9vw, 60pt); 
+        margin: 1rem 0;
+    }
+    
+    p {
+        font-size: clamp(13pt, 3vw, 15pt);
+        margin: 0 2rem;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
