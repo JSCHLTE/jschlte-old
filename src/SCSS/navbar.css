@@ -88,7 +88,7 @@ nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    text-align: left;
+    text-align: center;
     z-index: 7;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -181,5 +181,9 @@ nav {
 
 .overlayOn {
   display: block;
+}
+
+.nav-wrapper {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=navbar.css.map */
