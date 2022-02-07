@@ -1,4 +1,3 @@
-//Jordan Schulte
 let theme = document.querySelector(".theme");
 let themeLogo = document.querySelector("#theme-mode");
 let lightMode = localStorage.getItem("lightMode");
