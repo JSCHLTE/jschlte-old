@@ -178,7 +178,7 @@ html::-webkit-scrollbar-thumb:hover{
 }
 /*NavColor*/
 nav {
-	background-color: var(--primary2-clr);
+	background-color: var(--primary-clr);
 	color: var(--primaryFont-clr);
 	display: flex;
 	justify-content: space-around;
