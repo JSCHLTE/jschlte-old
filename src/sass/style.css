@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-clr: hsl(0, 0%, 0%);
   --primary-blur: hsla(0, 0%, 0%, 0.8);
@@ -214,9 +218,11 @@ nav {
   align-items: center;
   height: 4rem;
   text-transform: uppercase;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 4;
   border-bottom: 2px solid var(--primary-clr);
   transition: 0.2s ease;
 }
@@ -328,18 +334,20 @@ nav {
 
 /*Head Section*/
 #noscript-warning {
-  position: fixed;
+  position: absolute;
+  text-align: center;
   display: flex;
   left: 0;
-  top: 8%;
+  top: 10%;
   color: white;
   background-color: red;
   width: 100vw;
   justify-content: center;
   align-items: center;
   font-size: min(max(10rem, 50%), 1.1rem);
-  z-index: 100;
   font-family: "Varela Round", sans-serif;
+  z-index: 5;
+  padding: 0.5rem 2rem;
 }
 
 .head-wrapper {
