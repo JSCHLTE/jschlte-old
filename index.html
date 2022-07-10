@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Jordan Schulte</title>
-    <link rel="icon" href="Images/logo.jpg" id="icon">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="src/assets/images/logo.jpg" id="icon">
+    <link rel="stylesheet" href="src/sass/style.css">
     <!--Scrips/Links-->
+    <script src="src/javascript/script.js" defer></script>
     <script src="https://kit.fontawesome.com/58b34f234f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
     <!--Scrips/Links-->
-
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -19,34 +18,33 @@
     <!--Fonts-->
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h2>Jordan</h2>
-            </div>
-                <div class="nav-links">
-                    <a href="#skills" class="nav-item">Skills</a>
-                    <a href="#projects" class="nav-item">Projects</a>
-                    <a href="dl_content/Jordans_Resume.pdf" download class="nav-item" title="Download my Résumé (pdf)">Résumé</a>
-                    <div class="navContent">
-                        <a href="#socials" class="dropbtn nav-item">Social Media <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="https://twitter.com/JSCHLTE" target="_blank">Twitter</a>
-                            <a href="https://github.com/JSCHLTE" target="_blank">GitHub</a>
-                            <a href="mailto:email.jordanschulte@gmail.com">Email</a>
-                        </div>
+    <nav>
+        <div class="logo">
+            <h2>Jordan</h2>
+        </div>
+            <div class="nav-links">
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="src/assets/dl_content/Jordans_Resume.pdf" download class="nav-item" title="Download my Résumé (pdf)">Résumé</a>
+                <div class="navContent">
+                    <a href="#socials" class="dropbtn nav-item">Social Media <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="https://twitter.com/JSCHLTE" target="_blank">Twitter</a>
+                        <a href="https://github.com/JSCHLTE" target="_blank">GitHub</a>
+                        <a href="mailto:email.jordanschulte@gmail.com">Email</a>
                     </div>
                 </div>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            <div class="theme" data-tooltip="Toggle Theme">
-                <i class="fas fa-sun" id="theme-mode"></i>
             </div>
-        </nav>
-    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        <div class="theme" data-tooltip="Toggle Theme">
+            <i class="fas fa-sun" id="theme-mode"></i>
+        </div>
+    </nav>
+    <header>
 <div class="wrapper">
         <section class="head-wrapper" id="top">
             <noscript> 
@@ -97,140 +95,110 @@
             <h1 class="projects-title">My Top Projects</h1>
         <div class="projects-container">
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="webTag">Website</div>
-                </div>
                 <a href="https://github.com/JordanDevelops/JordanDevelops.github.io" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/portfolio.png" alt="My Portfolio" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/portfolio.png" alt="My Portfolio" draggable="false"></div>
                 <div class="projects-text">
-                    <h2>My Portfolio</h2>
-                    <div class="projects-text-section" data-simplebar>
-                        <p>I built this website to showcase all my projects I have worked on / built. This website was built with <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
-                    </div>
+                        <h2>My Portfolio</h2>
+                        <div class="projects-text-section">
+                            <p>I built this website to showcase all my projects I have worked on / built. This website was built with <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
+                        </div>
                 </div>
             </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="appTag">App</div>
-                </div>
                 <a href="https://nbaplayerstattracker.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/iap.png" alt="In-App Free" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/iap.png" alt="In-App Free" draggable="false"></div>
                 <div class="projects-text">
                     <h2>NBA Player Stat Tracker</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>I made this website to practice pulling information from an API and making it look presentable to users. <span>HTML</span>, <span>SCSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
             </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="webTag">Website</div>
-                </div>
                 <a href="https://harmonious-cocada-f1db99.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/mapsclone.png" alt="Google Maps Clone" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/mapsclone.png" alt="Google Maps Clone" draggable="false"></div>
                 <div class="projects-text">
                     <h2>Google Maps Clone</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>Google Maps Clone using Mapbox.</p>
                     </div>
                 </div>
             </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="appTag">App</div>
-                </div>
                 <a href="https://weather-app-jordan.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/weather.png" alt="Weather App" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/weather.png" alt="Weather App" draggable="false"></div>
                 <div class="projects-text">
                     <h2>Weather App</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>Made this website to practice my pulling information from API's. This uses the OpenWeather API. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="appTag">App</div>
-                </div>
                 <a href="https://wwwnotes.netlify.app" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/wwwNotes.png" alt="Jordan's Note's App." draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/wwwNotes.png" alt="Jordan's Note's App." draggable="false"></div>
                 <div class="projects-text">
                     <h2>Notes App</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>I made this project because I needed to store information for games and homework. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="appTag">App</div>
-                </div>
                 <a href="https://jordan-todo-list.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/jdl.png" alt="Jordan's To-do List" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/jdl.png" alt="Jordan's To-do List" draggable="false"></div>
                 <div class="projects-text">
                     <h2>To-do List</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>I made this website for my grocery shopping and to sharpen my JavaScript skills. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="gameTag">Game</div>
-                </div>
                 <a href="https://number-guesser-jordan.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/ngg.png" alt="Jordan's Number Guesser Game." draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/ngg.png" alt="Jordan's Number Guesser Game." draggable="false"></div>
                 <div class="projects-text">
                     <h2>Number Guesser</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>This was a game I had done for boces, but I decided to upgrade it. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="gameTag">Game</div>
-                </div>
                 <a href="https://rock-paper-scissors-jordan.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/rps.png" alt="Rock, Paper, Scissors" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/rps.png" alt="Rock, Paper, Scissors" draggable="false"></div>
                 <div class="projects-text">
                     <h2>Rock, Paper, Scissors</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                     <p>Rock, Paper, Scissors made this game with vanilla JavaScript to tone my skills. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                 </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="appTag">App</div>
-                </div>
                 <a href="https://jordan-birthday-countdown.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/countdown.png" alt="Countdown Timer" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/countdown.png" alt="Countdown Timer" draggable="false"></div>
                 <div class="projects-text">
                     <h2>Countdown Timer</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>Made this to practice my JavaScript skills and to test out the Date objects. <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
                 </a>
             </div>
             <div class="projects-div">
-                <div class="projects-tag">
-                    <div class="webTag">Website</div>
-                </div>
                 <a href="https://competentcreators.netlify.app/" class="btn-view" target="_blank">
-                <div class="projects-img"><img src="Images/cc.png" alt="Competent Creators" draggable="false"></div>
+                <div class="projects-img"><img src="src/assets/images/cc.png" alt="Competent Creators" draggable="false"></div>
                 <div class="projects-text">
                     <h2>Competent Creators</h2>
-                    <div class="projects-text-section" data-simplebar>
+                    <div class="projects-text-section">
                         <p>I built this website for a friend who made pretty cool gfx so I made him a website. This website was built with <span>HTML</span>, <span>CSS</span> and <span>JavaScript</span>.</p>
                     </div>
                 </div>
@@ -254,12 +222,8 @@
                 <a href="mailto:email.jordanschulte@gmail.com" target="_blank" data-tooltip="Email Me"><i class="fas fa-envelope"></i></a>
             </div>
         <p class="copyright">Copyright © 2022, Jordan.</p>
-        <p class="version"><a href="https://github.com/JSCHLTE/Jschlte.github.io" target="_blank">version 3.0.6</a></p>
+        <p class="version"><a href="https://github.com/JSCHLTE/Jschlte.github.io" target="_blank">version 4.0</a></p>
     </footer>
 </div>
-    <script src="JavaScript/navbar.js"></script>
-    <script src="JavaScript/totop.js"></script>
-    <script src="JavaScript/lightmode.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </body>
 </html>
