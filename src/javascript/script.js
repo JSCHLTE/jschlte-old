@@ -66,7 +66,6 @@ theme.addEventListener("click", () => {
 
 if (lightMode === "enabled") {
 	document.body.classList.toggle("light-mode");
-	icon.href = "src/assets/images/logo-white.jpg";
 	themeLogo.className = "fas fa-moon";
 }
 //Light-mode
