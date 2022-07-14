@@ -361,6 +361,7 @@ nav {
   color: var(--primaryFont-clr);
   text-align: center;
   transition: 0.2s ease;
+  margin-top: -3rem;
 }
 
 .head-title {
