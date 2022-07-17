@@ -726,8 +726,9 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(100%);
-        animation: bounceBack 0.5s;
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.1s ease opacity;
     }
 
     .fa-chevron-down {
@@ -744,86 +745,13 @@ nav {
     }
 
     .nav-active {
-        transform: translateX(0);
-        animation: appear 1s;
+        pointer-events: all;
+        opacity: 1;
         overflow: hidden;
     }
 
     .fixed-position {
         overflow: hidden;
-    }
-
-    @keyframes appear {
-        0% {
-            opacity: 0;
-            transform: translate(0);
-        }
-
-        25% {
-            opacity: 0;
-            transform: translate(0);
-        }
-
-        25% {
-            opacity: 1;
-            transform: translate(0);
-        }
-
-        50% {
-            opacity: 1;
-            transform: translate(0);
-        }
-
-        75% {
-            opacity: 1;
-            transform: translate(0);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translate(0);
-        }
-    }
-
-    @keyframes bounceBack {
-        0% {
-            opacity: 1;
-            transform: translate(0);
-        }
-
-        25% {
-            opacity: 1;
-            transform: translate(0);
-        }
-
-        50% {
-            opacity: 0;
-            transform: translate(0);
-        }
-
-        75% {
-            opacity: 0;
-            transform: translate(0);
-        }
-
-        100% {
-            opacity: 0;
-            transform: translate(0);
-        }
-    }
-
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-
-        50% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
     }
 
     .nav-links li {
