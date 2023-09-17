@@ -1,0 +1,78 @@
+.about-content {
+    color: #fff;
+}
+
+.about-content-heading {
+    max-width: 31.25rem;
+}
+
+.about-content-heading p {
+    margin: 1rem 0;
+}
+
+.about-content-heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3.125rem 0;
+}
+
+.about-content-heading-img {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-right: 2.5rem;
+}
+
+
+.about-work {
+    margin: 3.125rem 0;
+}
+
+.work-card-wrapper, .work-card-role-list {
+    margin: 0 3.125rem;
+}
+
+.work-card {
+    margin: 0 0 4rem 0;
+}
+
+.work-card-title h3 {
+    font-size: 16pt;
+}
+
+.work-card-date {
+    margin: 0.3125rem 0;
+} 
+
+.work-card-label {
+    font-weight: bold;
+}
+
+.work-card-role-list li {
+    margin: 0.3125rem 0;
+}
+
+.work-card-role-sub-list {
+    margin: 0 1.5rem;
+}
+
+@media screen and (max-width: 59.375rem) {
+    .work-card-wrapper {
+        margin: 0;
+    }
+
+    .work-card-role-list {
+        margin: 0 0 0 3.125rem;
+    }
+
+    .about-content-heading-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content-heading-img {
+        margin: 0 auto 3.125rem;
+    }
+}

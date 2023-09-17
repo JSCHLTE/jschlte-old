@@ -1,0 +1,171 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+body, p, a {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 12pt;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+#component-wrapper {
+  padding: 5rem;
+}
+
+.f-jc-ac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-wrapper {
+  font-size: 18pt;
+}
+
+.link-a, .link-w {
+  text-decoration: none;
+  position: relative;
+}
+
+.link-a {
+  color: #000;
+}
+
+.link-w {
+  color: #fff;
+}
+
+.link-a::after, .link-w::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5px;
+  bottom: -2px;
+  left: 0;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.link-a::after {
+  background: #000;
+}
+
+.link-w::after {
+  background: #fff;
+}
+
+.link-a:hover::after, .link-w:hover::after {
+  transform: scaleX(0);
+}
+
+#main-wrapper {
+  z-index: 2 !important;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#particle-wrapper {
+  position: absolute;
+  z-index: -1;
+}
+
+/*Navbar Styling*/
+#navbar {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  height: 7.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.navbar-logo img{
+  max-width: 125px;
+}
+
+.navbar-wrapper {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-item a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0 0 25px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.1s ease;
+}
+
+.navbar-item a:hover {
+  border-bottom-color: #fff;
+}
+
+.navbar-item a.active {
+  opacity: 0.5;
+  border-bottom-color: #fff; 
+}
+
+#burger-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+#burger-wrapper i {
+  font-size: 16pt;
+}
+
+#footer {
+  width: 100%;
+  height: 5rem;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 59.375rem) {
+  #burger-wrapper {
+    display: block;
+  }
+
+  .navbar-wrapper {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+    right: 10%;
+    background: #000;
+    border: 2px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateY(50%);
+    z-index: 3;
+  }
+
+  .navbar-item {
+    margin: 2.5rem;
+  }
+
+  .navbar-item a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-active {
+    display: block !important;
+  }
+}

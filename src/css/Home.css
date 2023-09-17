@@ -1,0 +1,38 @@
+#home-wrapper {
+    color: #fff;
+    width: 100%;
+    height: calc(100vh - 7.5rem);
+    flex-direction: column;
+}
+
+.home-title-wrapper h2 {
+    font-size: 35pt;
+}
+
+.home-title-wrapper p {
+    margin: 1.25rem 0 2rem;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.home-buttons-wrapper {
+    text-align: center;
+}
+
+.home-button {
+    width: 135px;
+    height: 45px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    transition: all .4s cubic-bezier(.22,1,.36,1);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.home-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
